@@ -1,15 +1,16 @@
-namespace CodeChallenges 
+namespace CodeChallenges
 {
-    public class CodeChallenge9
+  public class CodeChallenge9
+  {
+    public static LinkedListKth ReverseLinkedList(LinkedListKth list)
     {
-        public void ReverseLinkedList()
-        {
-            
-        }
-
-        public void IsPalindrome()
-        {
-            
-        }
+      return list;
     }
+
+    public static bool IsPalindrome(LinkedListKth list)
+    {
+      bool isPalindrome = false;
+      return isPalindrome;
+    }
+  }
 }
