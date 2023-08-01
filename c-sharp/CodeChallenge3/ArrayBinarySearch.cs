@@ -10,18 +10,22 @@ namespace CodeChallenges
       int right = array.Length - 1;
 
       // Continue the loop as long as the left boundary is less than or equal to the right boundary
-      while (left <= right) 
+      while (left <= right)
       {
         // Calculate the middle index of the current search range
         int mid = left + (right - left) / 2;
         // If the middle element is equal to the key, we've found the target element
-        if (array[mid] == key) 
+        if (array[mid] == key)
         {
           // Return the index of the target element
-          return mid; 
+          while (mid > 0 && array[mid - 1] == key)
+          {
+            mid--;
+          }
+          return mid;
         }
         // If the key is greater than the middle element, narrow the search range to the right half
-        else if (array[mid] < key) 
+        if (array[mid] < key)
         {
           // Update the left boundary
           left = mid + 1;
