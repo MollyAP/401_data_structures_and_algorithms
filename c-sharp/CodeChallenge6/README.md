@@ -8,4 +8,3 @@ Extend on your LinkedList implementation by adding three new methods.
     InsertBefore: This method takes two arguments, "value" and "newValue". It adds a new node with the given "newValue" immediately before the first node that has the value specified by "value".
 
     InsertAfter: This method also takes two arguments, "value" and "newValue". It adds a new node with the given "newValue" immediately after the first node that has the value specified by "value".
-    
