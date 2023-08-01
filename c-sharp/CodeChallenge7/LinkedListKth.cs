@@ -1,8 +1,8 @@
 namespace CodeChallenges 
 {
-    public class LinkedListKth
+    public class LinkedListKth: InsertableLinkedList
     {
-        public void KthFromEnd()
+        public void KthFromEnd(int kthFromEnd)
         {
             
         }
