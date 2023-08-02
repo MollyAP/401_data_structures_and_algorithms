@@ -5,11 +5,12 @@ namespace CodeChallenges
   public class LinkedList
   {
     public Node Head { get; set; }
+    public Node Tail { get; set; } // Add Tail property
 
     public LinkedList()
     {
       Head = null;
-
+      Tail = null;
     }
 
     public void Insert(int value)
@@ -17,6 +18,11 @@ namespace CodeChallenges
       Node newNode = new Node(value);
       newNode.Next = Head;
       Head = newNode;
+
+      if (Tail == null)
+      {
+        Tail = newNode;
+      }
     }
 
     public bool Includes(int value)
@@ -40,13 +46,12 @@ namespace CodeChallenges
       StringBuilder result = new StringBuilder();
       while (current != null)
       {
-        result.Append($"{{ {current.Value} }} -> ");
+        result.Append($"{current.Value} -> "); // Remove curly braces
         current = current.Next;
       }
       result.Append("NULL");
       return result.ToString();
     }
-
   }
 
   public class Node
