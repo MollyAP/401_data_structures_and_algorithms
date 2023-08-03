@@ -26,7 +26,7 @@ namespace CodeChallenges
       }
 
       // Move both 'fast' and 'slow' until 'fast' reaches the end
-      while (fast.Next != null)
+      while (fast != null)
       {
         fast = fast.Next;
         slow = slow.Next;
