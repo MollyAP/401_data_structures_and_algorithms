@@ -1,18 +1,17 @@
-namespace CodeChallenges 
+namespace CodeChallenges
 {
+    public class Node
+    {
+        
+    }
+
     public class Stack
     {
-        public void Push()
-        {
-            
-        }
+
     }
 
     public class Queue
     {
-        public void Push()
-        {
-            
-        }
+
     }
 }
