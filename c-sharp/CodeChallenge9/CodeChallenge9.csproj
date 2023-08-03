@@ -27,4 +27,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CodeChallenge5\CodeChallenge5.csproj" />
+    <ProjectReference Include="..\CodeChallenge6\CodeChallenge6.csproj" />
+    <ProjectReference Include="..\CodeChallenge7\CodeChallenge7.csproj" />
+    <ProjectReference Include="..\CodeChallenge8\CodeChallenge8.csproj" />
+  </ItemGroup>
+
 </Project>
