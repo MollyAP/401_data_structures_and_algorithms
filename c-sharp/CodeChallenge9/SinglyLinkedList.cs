@@ -54,7 +54,7 @@ namespace CodeChallenges
         reversedCurrent = reversedCurrent.Next;
       }
 
-      // If the lengths are not equal, the linked list is not a palindrome
+      // If the lengths are not equal, the linked list is not a palindrome!
       return originalCurrent == null && reversedCurrent == null;
     }
   }
